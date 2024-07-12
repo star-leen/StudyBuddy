@@ -1,0 +1,20 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<main class="layout layout--3">
+    <div class="container">
+        <!-- <h2>{{user_profile.username}}</h2> -->
+                    
+        {% include 'base/topics_component.html' %}
+
+
+    
+        {% include 'base/feed_component.html' %}
+
+
+        <div>
+            {% include 'base/activity_component.html' %}
+        </div>
+    </div>
+</main>
+{% endblock %}
